@@ -70,14 +70,17 @@ class BMIState extends State<BMI> {
               children: <Widget>[
                 new TextField(
                   controller: _age,
+                  keyboardType: TextInputType.number,
                   decoration: new InputDecoration(
                     hintText:"Enter your age",
                     labelText: "Age",
                     icon: new Icon(Icons.person_outline),
+
                   ),
                 ),
                 new TextField(
                   controller:_height,
+                  keyboardType: TextInputType.number,
                   decoration: new InputDecoration(
                     hintText:"Enter your height",
                     labelText: "Height in feet",
@@ -86,6 +89,7 @@ class BMIState extends State<BMI> {
                 ),
                 new TextField(
                   controller: _weight,
+                  keyboardType: TextInputType.number,
                   decoration: new InputDecoration(
                     hintText:"Enter your weight",
                     labelText: "Weight in kg",
