@@ -15,7 +15,7 @@ class BMIState extends State<BMI> {
   double _bmi=0.0;
   String _tobe = "";
   String _result = "";
-  int _calBmi()
+  void _calBmi()
   {
     setState(() {
       String height = _height.text;
@@ -40,6 +40,7 @@ class BMIState extends State<BMI> {
       else{
         _tobe="Please fill all the fields";}
     });
+    FocusScope.of(context).requestFocus(new FocusNode());
   }
   @override
   Widget build(BuildContext context) {
